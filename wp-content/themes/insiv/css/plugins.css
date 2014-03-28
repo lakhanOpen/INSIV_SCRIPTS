@@ -1,0 +1,809 @@
+ 
+ 
+ 
+/*******===== Error Message =======****/
+
+
+
+span.errorIco  {background:url(../images/errorIco.png) no-repeat 0 0px; width:29px; height:29px; display:none; position:absolute; top:32px; right:22px; }
+
+
+.errorMsg  { color:#d24423; font-size:15px; font-family: 'robotoregular'; position:relative; top:-15px;  }
+.error { color:#d24423; font-size:15px; font-family: 'robotoregular'; text-align:left; margin-left:30px;}
+.sucess   { color:#009111; font-size:15px; font-family: 'robotoregular'; text-align:left; margin-left:15px;}
+.success   { color:#009111; font-size:15px; font-family: 'robotoregular'; text-align:left; margin-left:15px;}
+ 
+.couponError  { color:#d24423; font-size:15px; font-family: 'robotoregular';   }
+ 
+ /*******===== Slider =======****/
+ 
+ 
+ .full-width {
+    overflow: hidden;
+    position: relative;
+   /* background: #fff;*/
+}
+.full-width,
+.full-width .slide img {
+    width: 100% !important;
+}
+.full-width:hover {
+ /*   background: transparent;*/
+}
+.full-width .inner {
+    overflow-y: hidden;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+    filter: alpha(opacity=00);
+    -moz-opacity: 0;
+    opacity: 0;
+}
+.full-width .slide {
+    float: left;
+    overflow-x: hidden;
+	  overflow-y: hidden;
+    position: relative;
+}
+.full-width .slide img {
+    height: auto;
+}
+
+/*---
+.full-width .slide .slideTxt {
+    color: #fff;
+    position: absolute;
+     right:150px;
+     text-align: left;
+	 width:442px;
+ }
+.full-width .slide .slideTxt  h2 {
+    color: #fff;
+	font-size:38px !important;
+	font-weight:normal;
+	font-family: 'open_sanssemibold';
+	margin-bottom:10px;
+}
+ 
+.full-width .slide .slideTxt p {
+     text-align: left;
+	 color:#FFF;
+	 font-size:21px;
+	  font-family: 'open_sansregular';
+     margin: 0 0 20px 0;
+ }
+.full-width .slide .slideTxt a {  }
+ 
+ ---------- */
+ 
+.full-width .controls a {
+    position: absolute;
+    top: 50%;
+    margin-top: -46px;
+    display: block;
+    background: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    color: #fff;
+    font-size: 40px;
+    padding: 0 10px 2px 7px;
+    line-height: 40px;
+    *display: none;
+}
+.full-width .controls a.left {
+    left: 0px;
+}
+.full-width .controls a.right {
+    right: 0px;
+}
+.full-width .slide-nav {
+    *display: none;
+    font-size: 75px;
+    margin: 0 auto;
+    line-height: 50px;
+    font-family: 'Helvetica', Arial, sans-serif;
+	display:none;
+}
+.full-width .slide-nav span {
+    cursor: pointer;
+    color: #ccc;
+}
+.full-width .slide-nav span.current {
+    color: #333;
+}
+.lt-ie9 .full-width p,
+.lt-ie9 .full-width .controls a {
+    background: url('bg-trans.png') repeat;
+    _background: #333;
+}
+
+ 
+ 
+  
+ /*******===== Buttons =======****/
+
+
+ 
+.blueBtn { background:#05bfe9; display:inline-block; padding:15px 70px; color:#FFF; border:1px solid #e8e8e8; font-size:15px; font-family: 'robotoregular'; }
+.blueBtn:hover { background:#19d0fa;}
+.blueBtn:active { background:#00a1ca;}
+
+.blueBtnBig { background:#05bfe9; display:inline-block; padding:15px 130px; color:#FFF; border:1px solid #e8e8e8; font-size:15px; font-family: 'robotoregular'; }
+.blueBtnBig:hover { background:#19d0fa;}
+.blueBtnBig:active { background:#00a1ca;}
+
+
+.blackBtn { background:#2f2f2f; display:inline-block; padding:15px 70px; color:#FFF; border:1px solid #e8e8e8; font-size:15px; font-family: 'robotoregular'; }
+.blackBtn:hover { background:#575757;}
+.blackBtn:active { background:#2f2f2f;}
+
+.blackBtnBig { background:#252525; display:inline-block; padding:15px 146px; color:#FFF; border:1px solid #e8e8e8; font-size:15px; font-family: 'robotoregular'; }
+.blackBtnBig:hover { background:#575757;}
+.blackBtnBig:active { background:#2f2f2f;}
+
+.grayBtn { background:url(../images/grayBtnBg.png) repeat 0 0px; display:inline-block; padding:15px 70px; color:#FFF;  font-size:15px; font-family: 'robotoregular';  }
+.grayBtn:hover { background:#19d0fa; }
+.grayBtn:active { background:#2f2f2f;}
+
+.grayBtn1 { background:url(../images/grayBtnBg.png) repeat 0 0px; display:inline-block; padding:15px 70px; color:#FFF;  font-size:15px; font-family: 'robotoregular'; border:2px solid #fff;  }
+.grayBtn1:hover { background:#19d0fa; }
+.grayBtn1:active { background:#2f2f2f;}
+
+ 
+
+/*******===== Input Buttons =======****/
+
+input.blueBtn { background:#05bfe9; display:inline-block; padding:15px 70px; color:#FFF; border:1px solid #e8e8e8; font-size:15px; font-family: 'robotoregular'; width:196px; }
+input.blueBtn:hover { background:#19d0fa;}
+input.blueBtn:active { background:#00a1ca;}
+
+input.blackBtn { background:#2f2f2f; display:inline-block; padding:15px 70px; color:#FFF; border:1px solid #e8e8e8; font-size:15px; font-family: 'robotoregular';  width:196px; }
+input.blackBtn:hover { background:#575757;}
+input.blackBtn:active { background:#2f2f2f;}
+
+input.grayBtn { background:#bbbdbf; display:inline-block; padding:15px 70px; color:#FFF; border:1px solid #e8e8e8; font-size:15px; font-family: 'robotoregular'; width:196px;  }
+input.grayBtn:hover { background:#19d0fa;}
+input.grayBtn:active { background:#2f2f2f;}
+
+
+
+/*******===== Checkbox =======****/
+ 
+.betterCheckbox-box{
+	width:20px;
+	height:19px;
+ 	display: inline-block;
+	cursor:pointer;
+	background:  url(../images/checkBox.png) no-repeat 0 0px;
+ }
+
+.betterCheckbox-tick{
+	width:20px;
+	height:19px;
+	background:  url(../images/checkBox.png) no-repeat 0 -19px;
+}
+
+
+/*======= Bottom Border =========*/
+
+
+.betterCheckbox-box2 {
+	width:22px;
+	height:22px;
+ 	display: inline-block;
+	cursor:pointer;
+	background:  url(../images/newCheck.png) no-repeat 0 0px;
+ }
+
+.betterCheckbox-tick2 {
+	width:22px;
+	height:22px;
+	background:  url(../images/newCheck.png) no-repeat 0 -22px;
+}
+
+/*.betterCheckbox-box.disabled{
+	border: 3px solid #898989;
+	background:#ededed;
+}
+
+.betterCheckbox-tick.disabled{
+	background: url('checkmark-disabled.png');
+}
+
+*/
+
+
+
+/*======= Bottom Border =========*/
+
+
+span.blueBdr { width:40px; border-bottom:2px solid #30c0ec; margin:10px auto 0 auto; display:inherit; float:none; }
+span.whiteBdr { width:40px; border-bottom:2px solid #ffffff; margin:5px auto 0 auto; display:block; float:none; }
+
+
+
+ /*======= User Dropdown =========*/
+ 
+ /*======= User Dropdown ONSITE =========*/
+ 
+ .login { float:right;  min-width:165px;  margin:0px 0px 0 0; position:relative; }
+.loginDrop { margin:0px 0 0 0px; float:right; display:inline-block;}
+.loginDrop a.Drop{ display:block; padding:15px 0 0 45px; font-family: 'robotoregular'; font-size:15px; color:#FFF; height:54px; width:102px;  background:#252525 url(../images/loginImg.png) no-repeat 15px 15px; text-align:left;  }
+.loginDrop a.Drop:hover {   background:#00b3df url(../images/loginImg.png) no-repeat 15px 15px; color:#FFF;  }
+
+#loginDrop, #loginDrop li ul {
+	list-style: none;
+	display:block;
+ }
+
+#loginDrop li a {
+	display: block;
+ 	text-decoration: none;
+ }
+#loginDrop li:hover a.Drop {
+	  background:#00b3df url(../images/loginImg.png) no-repeat 15px 15px; color:#FFF; 
+ }
+ #loginDrop li a.DropAct {
+	  background:#00b3df url(../images/loginImg.png) no-repeat 15px 15px; color:#FFF; 
+ }
+
+
+#loginDrop li ul {
+	position: absolute;
+	display: none;
+ 	z-index: 100;
+ 	top:54px;
+	right:0px;
+    background:#404040;
+	width:300px;
+  	overflow:hidden;
+	padding-top:10px;
+	 
+
+} 
+/*#loginDrop li:hover ul {
+	display: block;
+	z-index: 100;
+ } */
+ 
+ 
+#loginDrop li ul li { margin-left:15px; position:relative; } 
+/*#loginDrop li ul li:first-child { margin-top:30px;}*/
+ #loginDrop li ul li a { color:#71ddff; display:inline-block; float:right; margin-right:15px; }
+#loginDrop li ul li a:hover { color:#FFF; }
+#loginDrop li ul li label { text-align:left; color:#FFF;  font-family: 'robotoregular'; font-size:15px; display:inline-block; margin-bottom:5px; }
+#loginDrop li ul li input[type="text"] { background:#FFF; width:270px; height:38px; padding:10px; color:#666;  font-family: 'robotoregular';  margin-bottom:15px;}
+#loginDrop li ul li input[type="password"] { background:#FFF; width:270px; height:38px; padding:10px; color:#666;  font-family: 'robotoregular';  margin-bottom:15px; }
+#loginDrop li ul li input[type="submit"] { border:0; width:270px; height:50px; margin-bottom:15px;}
+ 
+#loginDrop li ul li.lastLi { background:#535353; height:50px; line-height:50px; text-align:center; color:#FFF;  font-family: 'robotoregular'; font-size:15px; margin-left:0; } 
+#loginDrop li ul li.lastLi a { color:#71ddff; display:inline-block; float:none; margin:0; }
+#loginDrop li ul li.lastLi a:hover { color:#FFF; } 
+
+
+ /*======= User Dropdown =========*/
+ 
+ /*
+.login { float:right;  min-width:165px;  margin:0px 0px 0 0; position:relative; }
+.loginDrop:after { background:url(../images/userBoxDrop.png) no-repeat; width:7px; height:5px; position:absolute; right:20px; top:22px;content: '';}
+.loginDrop { margin:0px 0 0 0px; float:right; display:inline-block;}
+.loginDrop a.Drop{ display:block; padding:15px 0 0 45px; font-family: 'robotoregular'; font-size:15px; color:#FFF; height:54px; width:102px;  background:#252525 url(../images/loginImg.png) no-repeat 15px 15px; text-align:left;  }
+.loginDrop a.Drop:hover {   background:#00b3df url(../images/loginImg.png) no-repeat 15px 15px; color:#FFF;  }
+
+#loginDrop, #loginDrop li ul {
+	list-style: none;
+	display:block;
+ }
+
+#loginDrop li a {
+	display: block;
+ 	text-decoration: none;
+ }
+#loginDrop li:hover a.Drop {
+	  background:#00b3df url(../images/loginImg.png) no-repeat 15px 15px; color:#FFF; 
+ }
+
+#loginDrop li ul {
+	position: absolute;
+	display: none;
+ 	z-index: 10;
+ 	top:54px;
+	right:0px;
+    background:#404040;
+	width:340px;
+  	overflow:hidden;
+	 
+
+}
+#loginDrop li:hover ul {
+	display: block;
+	z-index: 100;
+ } 
+ 
+ 
+#loginDrop li:hover ul li { margin-left:30px;}
+#loginDrop li:hover ul li:first-child { margin-top:30px;}
+#loginDrop li:hover ul li a { color:#71ddff; display:inline-block; float:right; margin-right:30px; }
+#loginDrop li:hover ul li a:hover { color:#FFF; }
+#loginDrop li:hover ul li label { text-align:left; color:#FFF;  font-family: 'robotoregular'; font-size:15px; display:inline-block; margin-bottom:5px; }
+#loginDrop li:hover ul li input[type="text"] { background:#FFF; width:283px; height:42px; padding:10px; color:#666;  font-family: 'robotoregular';  margin-bottom:25px;}
+#loginDrop li:hover ul li input[type="password"] { background:#FFF; width:283px; height:42px; padding:10px; color:#666;  font-family: 'robotoregular';  margin-bottom:25px; }
+#loginDrop li:hover ul li input[type="submit"] { border:0; width:283px; height:55px; margin-bottom:30px;}
+
+#loginDrop li:hover ul li.lastLi { background:#535353; height:65px; line-height:65px; text-align:center; color:#FFF;  font-family: 'robotoregular'; font-size:15px; margin-left:0; } 
+#loginDrop li:hover ul li.lastLi a { color:#71ddff; display:inline-block; float:none; margin:0; }
+#loginDrop li:hover ul li.lastLi a:hover { color:#FFF; }
+
+
+*/
+
+
+
+ /*======= Dropdown In =========*/
+ 
+.login { float:right;  min-width:165px;  margin:0px 0px 0 0; position:relative; }
+.loginDropIn { margin:0px 0 0 0px; float:right; display:inline-block;}
+.loginDropIn a.Drop{ display:block; padding:15px 50px 0 30px; font-family: 'robotoregular'; font-size:15px; color:#FFF; height:54px; min-width:180px;  background:#252525 url(../images/loginDropIn.png) no-repeat 95% 15px; text-align:left;   }
+.loginDropIn a.Drop:hover {   background:#00b3df url(../images/loginDropInAct.png) no-repeat 95% 15px; color:#FFF;  }
+
+#loginDropIn, #loginDropIn li ul {
+	list-style: none;
+	display:block;
+ }
+
+#loginDropIn li a {
+	display: block;
+ 	text-decoration: none;
+ }
+#loginDropIn li:hover a.Drop {
+	  background:#00b3df url(../images/loginDropInAct.png) no-repeat 95% 15px; color:#FFF; 
+ }
+
+#loginDropIn li ul {
+	position: absolute;
+	display: none;
+ 	z-index: 10;
+ 	top:54px;
+	right:0px;
+    background:#00b3df;
+	width:180px;
+  	overflow:hidden;
+	 
+
+}
+#loginDropIn li:hover ul {
+	display: block;
+	z-index: 100;
+ } 
+ 
+#loginDropIn li:hover ul li { display:block; clear:both;} 
+#loginDropIn li:hover ul li a { color:#FFF; display:inline-block;  height:54px; width:180px; text-align:left; padding-left:30px; line-height:54px;  }
+#loginDropIn li:hover ul li a:hover { color:#FFF; background:#00a1ca; }
+ 
+
+
+
+ /*======= Dropdown In =========*/
+ 
+.optionDrop { margin:0px 0 0 30px; float:none; display:inline-block;position:relative; }
+.optionDrop a.Drop{ display:block; background:url(../images/grayArrow.png) no-repeat; width:22px; height:22px; }
+.optionDrop a.Drop:hover {   background:url(../images/blueDrop.png) no-repeat 0 0; color:#FFF;  }
+
+#optionDrop, #optionDrop li ul {
+	list-style: none;
+	display:block;
+ }
+
+#optionDrop li a {
+	display: block;
+ 	text-decoration: none;
+ }
+#optionDrop li:hover a.Drop {
+	  background:url(../images/blueDrop.png) no-repeat 0 0; color:#FFF; 
+ }
+
+#optionDrop li ul {
+	position: absolute;
+	display: none;
+ 	z-index: 10;
+ 	top:22px;
+	left:0px;
+    background:#FFF;
+	border:1px solid #e8e8e8;
+	border-top:0;
+	width:180px;
+  	overflow:hidden;
+	 
+
+}
+#optionDrop li:hover ul {
+	display: block;
+	z-index: 100;
+ } 
+ 
+#optionDrop li:hover ul li { display:block; clear:both;} 
+#optionDrop li:hover ul li a { color:#454545; display:inline-block;  height:35px; width:180px; text-align:left; padding-left:30px; line-height:35px;  }
+#optionDrop li:hover ul li a:hover { color:#30c0ec;  }
+ 
+
+
+
+ /*======= Select Box =========*/
+ 
+.stateDrop{ margin:0px 0 0 0px; float:none; display:inline-block;  position:relative; }
+.stateDrop a.Drop{ display:block; padding:0px 0px 0 0px; font-family: 'robotoregular'; font-size:15px; color:#999; height:54px; width:200px; background:url(../images/grayArrow.png) no-repeat 95% 0px; text-align:left; margin:0;   }
+.stateDrop a.Drop:hover {   background:url(../images/blueDrop.png) no-repeat 95% 0;    }
+
+#stateDrop, #stateDrop li ul {
+	list-style: none;
+	display:block;
+ }
+
+#stateDrop li a {
+	display: block;
+ 	text-decoration: none;
+	text-align:left;
+ }
+#stateDrop li:hover a.Drop {
+	  background:#FFF url(../images/blueDrop.png) no-repeat 95% 0; color:#999; 
+ }
+
+#stateDrop li ul {
+	position: absolute;
+	display: none;
+ 	z-index: 10;
+ 	top:54px;
+	right:0px;
+    background:#FFF;
+	border:1px solid #e8e8e8;
+	border-top:0;
+	width:216px;
+  	overflow:hidden;
+}
+#stateDrop li:hover ul {
+	display: block;
+	z-index: 100;
+ } 
+ 
+#stateDrop li:hover ul li { display:block; clear:both; margin:0; } 
+#stateDrop li:hover ul li a { color:#868686; display:inline-block;  height:40px; width:180px; text-align:left; padding-left:30px; line-height:40px;  }
+#stateDrop li:hover ul li a:hover {  color:#30c0ec;  }
+ 
+
+
+
+ /*======= Date Box =========*/
+
+.dateDrop{ margin:0px 0 0 0px; float:none; display:inline-block;  position:relative; }
+.dateDrop a.Drop{ display:block; padding:0px 0px 0 0px; font-family: 'robotoregular'; font-size:15px; color:#999; height:54px; width:102px; background:url(../images/grayArrow.png) no-repeat 95% 0px; text-align:left; margin:0;   }
+.dateDrop a.Drop:hover {   background:url(../images/blueDrop.png) no-repeat 95% 0;    }
+
+#dateDrop, #dateDrop li ul {
+	list-style: none;
+	display:block;
+ }
+
+#dateDrop li a {
+	display: block;
+ 	text-decoration: none;
+	text-align:left;
+ }
+#dateDrop li:hover a.Drop {
+	  background:#FFF url(../images/blueDrop.png) no-repeat 95% 0; color:#999; 
+ }
+
+#dateDrop li ul {
+	position: absolute;
+	display: none;
+ 	z-index: 10;
+ 	top:54px;
+	right:15px;
+    background:#FFF;
+	border:1px solid #e8e8e8;
+	border-top:0;
+	width:102px;
+  	overflow:hidden;
+}
+#dateDrop li:hover ul {
+	display: block;
+	z-index: 100;
+ } 
+ 
+#dateDrop li:hover ul li { display:block; clear:both; margin:0; } 
+#dateDrop li:hover ul li a { color:#868686; display:inline-block;  height:40px; width:102px; text-align:left; padding-left:30px; line-height:40px;  }
+#dateDrop li:hover ul li a:hover {  color:#30c0ec;  }
+ 
+
+
+
+
+/*======= Rightbar Dropdown Step5 =======*/
+
+
+.rightbarDrop { margin:0px 0px 0 -15px; float:none; display:inline-block;position:relative; }
+.rightbarDrop a.Drop{ display:block; background:url(../images/stp5Dropdown.png) no-repeat; width:22px; height:22px; }
+.rightbarDrop a.Drop:hover {   background:url(../images/blueDrop.png) no-repeat 0 0; color:#FFF;  }
+
+#rightbarDrop, #rightbarDrop li ul {
+	list-style: none;
+	display:block;
+ }
+
+#rightbarDrop li a {
+	display: block;
+ 	text-decoration: none;
+ }
+#rightbarDrop li:hover a.Drop {
+	  background:url(../images/blueDrop.png) no-repeat 0 0; color:#FFF; 
+ }
+
+#rightbarDrop li ul {
+	position: absolute;
+	display: none;
+ 	z-index: 10;
+ 	top:35px;
+	left:0px;
+    background:#FFF;
+	border:1px solid #e8e8e8;
+	border-top:0;
+	width:180px;
+  	overflow:hidden;
+	 
+
+}
+#rightbarDrop li:hover ul {
+	display: block;
+	z-index: 100;
+ } 
+ 
+#rightbarDrop li:hover ul li { display:block; clear:both; margin:0;} 
+#rightbarDrop li:hover ul li a { color:#454545; display:inline-block;  height:35px; width:180px; text-align:left; padding-left:30px; margin:0; line-height:35px;  }
+#rightbarDrop li:hover ul li a:hover { background:#30c0ec; color:#FFF;  }
+ 
+
+
+/*======= Scroll Bar =======*/
+
+
+.ps-container .ps-scrollbar-x-rail {
+    position: absolute; /* please don't change 'position' */
+    bottom: 3px; /* there must be 'bottom' for ps-scrollbar-x-rail */
+    height: 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    -o-transition: background-color .2s linear, opacity .2s linear;
+    -webkit-transition: background-color.2s linear, opacity .2s linear;
+    -moz-transition: background-color .2s linear, opacity .2s linear;
+    transition: background-color .2s linear, opacity .2s linear;
+}
+
+.ps-container:hover .ps-scrollbar-x-rail,
+.ps-container.hover .ps-scrollbar-x-rail {
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+}
+
+.ps-container .ps-scrollbar-x-rail:hover,
+.ps-container .ps-scrollbar-x-rail.hover {
+    background-color: #eee;
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+}
+
+.ps-container .ps-scrollbar-x-rail.in-scrolling {
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+}
+
+.ps-container .ps-scrollbar-y-rail {
+    position: absolute; /* please don't change 'position' */
+    right: 3px; /* there must be 'right' for ps-scrollbar-y-rail */
+    width: 8px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    opacity: 0;
+    filter: alpha(opacity = 0);
+    -o-transition: background-color .2s linear, opacity .2s linear;
+    -webkit-transition: background-color.2s linear, opacity .2s linear;
+    -moz-transition: background-color .2s linear, opacity .2s linear;
+    transition: background-color .2s linear, opacity .2s linear;
+}
+
+.ps-container:hover .ps-scrollbar-y-rail,
+.ps-container.hover .ps-scrollbar-y-rail {
+    opacity: 0.6;
+    filter: alpha(opacity = 60);
+}
+
+.ps-container .ps-scrollbar-y-rail:hover,
+.ps-container .ps-scrollbar-y-rail.hover {
+    background-color: #eee;
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+}
+
+.ps-container .ps-scrollbar-y-rail.in-scrolling {
+    opacity: 0.9;
+    filter: alpha(opacity = 90);
+}
+
+.ps-container .ps-scrollbar-x {
+    position: absolute; /* please don't change 'position' */
+    bottom: 0; /* there must be 'bottom' for ps-scrollbar-x */
+    height: 8px;
+    background-color: #aaa;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -o-transition: background-color .2s linear;
+    -webkit-transition: background-color.2s linear;
+    -moz-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+}
+
+.ps-container.ie6 .ps-scrollbar-x {
+    font-size: 0; /* fixed scrollbar height in xp sp3 ie6 */
+}
+
+.ps-container .ps-scrollbar-x-rail:hover .ps-scrollbar-x,
+.ps-container .ps-scrollbar-x-rail.hover .ps-scrollbar-x {
+    background-color: #999;
+}
+
+.ps-container .ps-scrollbar-y {
+    position: absolute; /* please don't change 'position' */
+    right: 0; /* there must be 'right' for ps-scrollbar-y */
+    width: 8px;
+    background-color: #aaa;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    -o-transition: background-color .2s linear;
+    -webkit-transition: background-color.2s linear;
+    -moz-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+}
+
+.ps-container.ie .ps-scrollbar-y {
+    font-size: 0; /* fixed scrollbar height in xp sp3 ie6 */
+}
+
+.ps-container .ps-scrollbar-y-rail:hover .ps-scrollbar-y,
+.ps-container .ps-scrollbar-y-rail.hover .ps-scrollbar-y {
+    background-color: #999;
+}
+
+/* iCheck plugin Square skin, blue
+----------------------------------- */
+.icheckbox_square-blue,
+.iradio_square-blue {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 22px;
+    height: 22px;
+    background: url(blue.png) no-repeat;
+    border: none;
+    cursor: pointer;
+}
+
+.icheckbox_square-blue {
+    background-position: 0 0;
+}
+    .icheckbox_square-blue.hover {
+        background-position: -24px 0;
+    }
+    .icheckbox_square-blue.checked {
+        background-position: -48px 0;
+    }
+    .icheckbox_square-blue.disabled {
+        background-position: -72px 0;
+        cursor: default;
+    }
+    .icheckbox_square-blue.checked.disabled {
+        background-position: -96px 0;
+    }
+
+.iradio_square-blue {
+    background-position: -120px 0;
+}
+    .iradio_square-blue.hover {
+        background-position: -144px 0;
+    }
+    .iradio_square-blue.checked {
+        background-position: -168px 0;
+    }
+    .iradio_square-blue.disabled {
+        background-position: -192px 0;
+        cursor: default;
+    }
+    .iradio_square-blue.checked.disabled {
+        background-position: -216px 0;
+    }
+
+/* Retina support */
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5),
+       only screen and (-moz-min-device-pixel-ratio: 1.5),
+       only screen and (-o-min-device-pixel-ratio: 3/2),
+       only screen and (min-device-pixel-ratio: 1.5) {
+    .icheckbox_square-blue,
+    .iradio_square-blue {
+        background-image: url(blue.png);
+        -webkit-background-size: 240px 24px;
+        background-size: 240px 24px;
+    }
+}
+
+
+
+.custom-check {
+  overflow: hidden;
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  font: 1em/1.5em FontAwesome;
+  width: 1.5em;
+  height: 1.5em;
+  text-align: center;
+  vertical-align: middle;
+  margin-top: -1px;
+  line-height: 1.3em\9 !important; 
+}
+.custom-check > input {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  cursor: pointer;
+}
+.custom-check:before {
+  display: inline-block; 
+}
+.custom-check.checkbox {
+background:url(../images/newCheck.png) no-repeat 0 0;
+width:22px; 
+height:22px;
+}
+.custom-check.checkbox.checked {
+background:url(../images/newCheck.png) no-repeat 0 -22px;
+}
+.custom-check.radio {
+background:url(../images/newCheck.png) no-repeat 0 -22px;
+}
+.custom-check.radio.checked:before {
+background:url(../images/newCheck.png) no-repeat 0 -22px;
+}
+.custom-check.hover {
+/*background:url(../images/newCheck.png) no-repeat 0 -22px;*/
+}
+.custom-check.active {
+background:url(../images/newCheck.png) no-repeat 0 -22px;
+}
+.custom-check.disabled,
+.custom-check.disabled + label {
+   
+   opacity: .5;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
